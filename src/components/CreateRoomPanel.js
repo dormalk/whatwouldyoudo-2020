@@ -10,7 +10,8 @@ const INITIAL_SESSION = {
     status: 'WAITING',
     qustionObj: {},
     judgeIndex: 0,
-    gameType: ''
+    gameType: '',
+    pickedAnswer: null
 }
 
 
@@ -26,7 +27,7 @@ export const CreateRoomPanel = withRouter(({history, uid}) => {
             ...INITIAL_SESSION
         }
         newSession.createBy = uid? uid : generateUniqKey(8)
-
+        newSession.judgeIndex = newSession.createBy; 
 
         initializedFirebaseApp.database().ref('sessions/'+sessionId)
         .set(newSession)

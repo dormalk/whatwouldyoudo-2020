@@ -41,10 +41,6 @@ export const OnlineRoom = ({uid}) => {
         } else {
             setIsSession(false)
         }
-        return(() => {
-            if(id) initializedFirebaseApp.database().ref('sessions')
-                    .child(id).remove()
-        })
     },[setIsSession,getParamsFromUrl('id')])
 
     function addParticipentToSession(session){
