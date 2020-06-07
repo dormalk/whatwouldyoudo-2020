@@ -1,0 +1,17 @@
+.media-object{
+    height: 5rem;
+}
+
+.team-member{
+    width: 49%;
+    float: left;
+    margin: 0.5%;
+}
+
+hr{
+    margin: 1.5rem auto !important;
+}
+
+section,h2{
+    margin: 1rem 3rem;
+}

@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.ans{
+  padding: 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.ans:hover{
+  background-color: gainsboro;
+}
+
+a{
+  cursor: pointer;
+}
+.primary{
+  color: #3c578d;
+}
+
+.primary:hover{
+  color: #324899
+}
+
+
+#view_question .control_pannel{
+  display: flex;
+  justify-content: flex-end;
+}
+#view_question .fa{
+  padding: 0.25rem ;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+
+#view_question .fa:hover{
+color: #e74c3c;
+}
+#view_question .ans .fa{
+  opacity: 0;
+}
+#view_question .ans:hover .fa{
+  opacity: 1;
+}
+
+
+
+
+#online_room .row{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+#online_room .row .col{
+  width: 100%;
+  margin: 0.5rem;
+  border-radius: 0.35rem;
+  text-align: center;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+#online_room .row .col:hover {
+  background-color: #e74c3c;
+  color:white;
+}

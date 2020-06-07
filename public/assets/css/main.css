@@ -1,0 +1,24 @@
+#video-container{
+    list-style-type: none !important;
+}
+
+.panel-default{
+    width: 15vw !important;
+    float: left !important;
+    margin: 5px;
+    height: 20vw;
+}
+.card-title{
+    margin: 0px;
+    font-size: 1.7vw;
+}
+
+@media only screen and (max-width: 760px){
+    .panel-default{
+        width: 87vw !important;
+        float: left !important;
+        height: unset !important;
+
+    }    
+    
+}
