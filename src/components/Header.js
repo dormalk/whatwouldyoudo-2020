@@ -15,7 +15,7 @@ export const Header = () => {
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                     </button>
-                    <Link className="navbar-brand" to="/">WHAT WHOULD YOU DO</Link>
+                    <Link className="navbar-brand" to="/">WHAT WOULD YOU DO</Link>
                 </div>
                 <div className="collapse navbar-collapse" id="main-nav">
                 <ProfileDropDown/>

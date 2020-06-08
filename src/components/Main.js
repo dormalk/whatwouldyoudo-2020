@@ -28,8 +28,9 @@ export const Main = withRouter(({history}) => {
                 </div>
                 <center>
                 <React.Fragment>
-                    <button className="btn btn-primary" onClick={() => history.push('rungame')}>אני רוצה להתחיל</button>
-                    <button className="btn btn-indigo-500" style={{color: 'white',margin: '1rem'}} onClick={() => history.push('alldata')}>אני רוצה לצפות בכל הנתונים</button>
+                    <button className="btn btn-primary" style={{color: 'white',margin: '0.5rem'}}  onClick={() => history.push('rungame')}>אני רוצה להתחיל</button>
+                    <button className="btn btn-teal-500" style={{color: 'white',margin: '0.5rem'}}  onClick={() => history.push('playonline')}>משחק אונליין</button>
+                    <button className="btn btn-indigo-500" style={{color: 'white',margin: '0.5rem'}} onClick={() => history.push('alldata')}>אני רוצה לצפות בכל הנתונים</button>
                 </React.Fragment>
                 </center>
             </div>

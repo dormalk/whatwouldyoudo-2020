@@ -28,7 +28,8 @@ export const CreateRoomPanel = withRouter(({history, uid}) => {
         }
         newSession.createBy = uid? uid : generateUniqKey(8)
         newSession.judgeIndex = newSession.createBy; 
-
+        newSession.gameType = gameType;
+        
         initializedFirebaseApp.database().ref('sessions/'+sessionId)
         .set(newSession)
         .then(() => {
@@ -61,8 +62,8 @@ export const CreateRoomPanel = withRouter(({history, uid}) => {
                             </div>            
                             <label className="col-sm-2 control-label" htmlFor="sessionId">שם החדר</label>
                         </div>
-                        <div className="form-group">
-                            <div className="col-sm-6">
+                        <div className="form-group" style={{display: 'flex', flexDirection: 'column'}}>
+                            <div className="col-sm-3" style={{margin: 'auto'}}>
                                 <div className="radio radio-primary">
                                     <input  type="radio" 
                                             name="radio1" 
@@ -73,7 +74,7 @@ export const CreateRoomPanel = withRouter(({history, uid}) => {
                                     <label htmlFor="radio11">משחק קלאסי</label>
                                 </div>
                             </div>
-                            <div className="col-sm-6">
+                            <div className="col-sm-3" style={{margin: 'auto'}}>
                                 <div className="radio radio-primary">
                                     <input  type="radio" 
                                             name="radio2" 
