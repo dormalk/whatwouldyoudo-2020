@@ -90,19 +90,19 @@ export const RunOnlineRoomPanel = ({session,uid}) => {
 
         ans.forEach(a => {
             let rand = Math.floor(Math.random()*6+1);
-            if(randomAnswer.length < 5) {
+            if(randomAnswer.length < 3) {
                 if(rand === 2 && a.createAt > rendTime) randomAnswer.push(a)
             }
         })
-        if(randomAnswer.length < 5) {
+        if(randomAnswer.length < 3) {
             ans.forEach(a => {
                 let rand = Math.floor(Math.random()*6+1);
-                if(randomAnswer.length < 5) {
+                if(randomAnswer.length < 3) {
                     if(rand === 2) randomAnswer.push(a)
                 }
             })    
         }
-        if(ans) return randomAnswer.length === 5? randomAnswer : getRandomAnswers();
+        if(ans) return randomAnswer.length === 3? randomAnswer : getRandomAnswers();
         else return [];
     }
 
